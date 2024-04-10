@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #8758ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+  text-align: center
+}
+
+.TodoWrapper {
+  margin-top: 5rem;
+  padding: 2rem;
+  content: '';
+  background: inherit;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 7px 29px 10px;
+  height: 320px;
+  width: 600px;
+  background: inherit;
+  border-radius: 15px;
+  border: 1px solid rgba(122, 122, 122, 0.568);
+  overflow: hidden;
+  border-radius: 15px;
+  backdrop-filter: blur(15px);
+  text-align: center
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid #ffffff;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #fff;
+  border-radius: 100px;
+}
+
+.todo-input::placeholder {
+  color: #ffffff4d;
+}
+
+.todo-btn {
+  border: 1px solid #ffffff;
+  background: none;
+  padding: 0.55rem;
+  cursor: pointer;
+  border-radius: 100px;
+  color: #fff;
+  -webkit-transition-duration: 0.4s;
+  transition: 0.3s;
+  opacity: 0.8;
+}
+
+.todo-btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  opacity: 1;
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: 1px solid #ffffff;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 100px;
+  margin-bottom: 1rem;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.incompleted {
+  color: #fff;
+  cursor: pointer;
+}
+
+.completed {
+  color: #c5aeff;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+}
+ 
